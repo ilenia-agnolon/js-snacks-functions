@@ -11,3 +11,22 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+
+//___________________________________________________________
+
+//METODO CON IL CICLO FOR:
+
+//creo array vuoto
+let initials = [];
+
+//ciclo for
+for (let i = 0; i < names.length; i++) {
+    const firstLetter = names [i] [0]; //prendo la prima lettera del nome
+    initials.push(firstLetter); //la aggiungo nell'array delle iniziali creato sopra 
+}
+
+//stampo a schermo il risultato atteso: ["A", "L", "M", "A", "G", "A"]
+console.log(initials);
+
+
